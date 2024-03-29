@@ -1,0 +1,607 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+}
+
+/* Scrollbar */
+*::-webkit-scrollbar {
+    width: 5px;
+    background-color: #fff;
+    border-radius: 25%;
+}
+
+*::-webkit-scrollbar-thumb {
+    width: 5px;
+    border-radius: inherit;
+    background-color: red;
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #131313;
+    overflow-x: hidden;
+}
+
+/* Header */
+.header {
+    background-color: #292929;
+    color: #fff;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+/* Logo */
+.icon {
+    width: 100px;
+    height: 30px;
+    margin-left: 30px;
+    margin-top: 5px;
+}
+
+/* Search Box */
+.search-box {
+    flex: 1;
+    padding: 8px;
+    border: none;
+    border-radius: 20px;
+    background-color: #131313;
+    color: #ccc;
+    font-size: 14px;
+    outline: none;
+    margin-left: 30px;
+    margin-right: 10px;
+    width: calc(100% - 60px);
+}
+
+/* Search Icon */
+.search-icon {
+    height: 25px;
+    width: 25px;
+    margin-left: -50px;
+    margin-right: 50px;
+}
+
+/* Offer Button */
+.offer-button,
+.pro-button {
+    padding: 8px 20px;
+    border: none;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-right: 10px;
+    width: auto;
+}
+
+.offer-button {
+    background: linear-gradient(140deg, #e72c30, #f05a28);
+}
+
+.pro-button {
+    background-color: #fff;
+    color: #131313;
+}
+
+/* Toggle Mode Button */
+.toggle-mode {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+/* User */
+.user {
+    font-size: 14px;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+/* Side Bar */
+.side-bar {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 22%;
+    background-color: #292929;
+    color: #fff;
+    padding-top: 60px;
+    height: 100vh;
+    z-index: 1000;
+    display: none;
+}
+
+/* Side Bar Scrollbar */
+.side-bar::-webkit-scrollbar {
+    display: none;
+}
+
+/* Close Button */
+.close-button {
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    top: 2px;
+    right: 0;
+}
+
+/* User Profile */
+.user-profile {
+    margin-top: -25px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.user-profile:hover {
+    background-color: #444;
+}
+
+/* User Profile Icon */
+.user-png-icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+/* Side Elements */
+.side-elements {
+    padding: 20px;
+}
+
+.side-elements ul {
+    list-style-type: none;
+}
+
+.side-elements ul li {
+    padding: 10px 0;
+    cursor: pointer;
+}
+
+.side-elements ul li:hover {
+    color: #e72c30;
+}
+
+.side-elements hr {
+    border: 0.5px solid #666;
+    margin: 10px 0;
+}
+
+.side-elements h3 {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.side-elements h5 {
+    font-size: 12px;
+    margin-top: 5px;
+    color: #999;
+}
+
+/* Side Elements Buttons */
+.side-elements button {
+    padding: 8px 20px;
+    border: none;
+    border-radius: 20px;
+    background-color: #e72c30;
+    color: #fff;
+    font-size: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+.side-elements button:hover {
+    background-color: #f05a28;
+}
+
+/* Bottom Navigation */
+.bottom-nav {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    color: #fff;
+    margin-left: 20px;
+}
+
+/* Bottom Container */
+.bottom-container {
+    margin-top: 70px;
+    display: flex;
+    gap: 30px;
+    font-weight: 100;
+    font-family: sans-serif;
+}
+
+/* Full Container */
+.full-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Main Container */
+.main-container {
+    display: flex;
+    flex-direction: column;
+    width: 75vw;
+    margin-top: 70px;
+}
+
+/* Section */
+.section {
+    color: whitesmoke;
+    margin-top: 10px;
+    display: flex;
+    margin-left: 20px;
+    justify-content: left;
+    flex-direction: column;
+}
+
+.section h2 {
+    font-size: 1.7rem;
+    margin-top: 30px;
+    margin-left: 15px;
+}
+
+/* Section Container */
+.section-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    margin-top: -60px;
+    height: 50vh;
+    margin-left: 40px;
+    gap: 15px;
+    position: relative;
+    overflow-x: scroll;
+}
+
+.section-container::-webkit-scrollbar{
+    display: none;
+}
+
+/* Section Heading */
+.section-heading {
+    color: whitesmoke;
+    margin-left: 30px;
+}
+
+/* Music Card */
+.music-card {
+    width: 20vw;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #131313;
+    margin: 0 5px;
+    transition: all 0.3s ease;
+}
+
+/* Track Image */
+.track-image {
+    height: 180px;
+    width: 190px;
+    position: relative;
+}
+
+/* Play Icon */
+.play-icon {
+    transform: translate(1%, -220%);
+    opacity: 0;
+    font-size: 2rem;
+    color: whitesmoke;
+    background-color: #0d0c0c58;
+    border-radius: 50%;
+    padding: 8px 15px;
+}
+
+.music-card:hover .play-icon {
+    opacity: 1;
+    cursor: pointer;
+}
+
+/* Song Title */
+.song-title {
+    font-weight: bold;
+    font-size: 0.9rem;
+    margin-top: -35px;
+    margin-left: 10px;
+    color: aliceblue;
+}
+
+/* Music Player */
+.music-player {
+    background-color: #292929;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 40px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    padding-bottom: 5px;
+    height: 12vh;
+    width: 100%;
+}
+.custom-audio-controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.music-seek{
+    color: #e72c30;
+}
+
+
+.music-seek{
+    display: none;
+    width: 100%;
+    height: 20px;
+    margin: 0 10px;
+    opacity: 0.05;
+}
+
+#currentTime, #duration {
+    font-size: 14px;
+    color: #777;
+}
+
+
+
+.parent-controler{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+/* Song Image */
+.song-image {
+    border-radius: 50px;
+    height: 45px;
+    width: 45px;
+}
+
+/* Current Music Player */
+.current-music-player {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 20px;
+}
+
+/* Current Song Details */
+.current-song-details {
+    display: flex;
+    color: #fff;
+    flex-direction: column;
+}
+
+/* Music Controls */
+.music-controls {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+    justify-content: space-between;
+}
+
+/* Time Stamp */
+.time-stamp {
+    color: #fff;
+}
+
+/* Music Quality */
+.music-quality {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 40px;
+}
+
+/* Selected Quality */
+.selected-quality {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid red;
+    padding: 8px 15px;
+    border-radius: 50px;
+    font-weight: bolder;
+}
+
+/* Song Quality */
+.song-quality {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 10px;
+    position: relative;
+}
+
+/* Audio Set */
+.audio-set {
+    position: absolute;
+    top: -29.5vh;
+    left: -5vw;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #fff;
+    height: 28vh;
+    border-radius: 5px;
+    margin: 0;
+    width: 11vw;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 5px;
+    font-weight: bolder;
+    font-size: larger;
+    display: none;
+}
+
+/* List */
+.list {
+    font-weight: normal;
+    margin-top: 30px;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: last baseline;
+    justify-content: center;
+}
+
+.list a {
+    text-decoration: none;
+    color: #292929;
+    font-size: 18px;
+    padding-bottom: 10px;
+}
+
+/* Custom Radio */
+.cust-radio {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 5px;
+    margin-left: -5px;
+}
+
+.cust-radio:hover {
+    border-radius: 2px;
+    background-color: #a09e9e;
+    cursor: pointer;
+}
+
+/* Like Song */
+.like_song .fav path {
+    fill: #e72c30;
+}
+
+/* Button */
+button {
+    background-color: transparent;
+    border: none;
+}
+
+/* More Options Button */
+.threedot_svg .svg_color {
+    fill: #fff;
+}
+
+/* Repeat Button */
+.repeat .svg_color {
+    fill: #fff;
+}
+
+/* Go Back Button */
+.go-back .svg_color {
+    fill: #fff;
+}
+
+.go-back .svg_color:hover{
+    cursor: pointer;
+}
+
+/* Play/Pause Button */
+.play-pause .svg_color {
+    fill: #fff;
+}
+
+.play-pause{
+    height: 40px;
+    background-color: #e72c30;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.play-pause:hover{
+    cursor: pointer;
+}
+
+/* Go Next Button */
+.next .svg_color {
+    fill: #fff;
+}
+
+.next .svg_color:hover{
+    cursor: pointer;
+}
+
+.next{
+    margin-top: -5px;
+    transform: rotate(180deg);
+}
+
+/* Shuffle Button */
+.shuffle .svg_color {
+    fill: #fff;
+}
+
+/* Volume Toggle Button */
+.volume-toggle .svg_color {
+    fill: #fff;
+}
+
+/* Volume Toggle */
+.volume-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #fff;
+    padding: 2px;
+    border-radius: 50%;
+}
+
+/* Queue Button */
+.queue .svg_color {
+    fill: #fff;
+}
+
+/* Queue */
+.queue {
+    transform: rotate(-90deg);
+}
+
+/* Hover Effects */
+.music-controls button:hover svg,
+.music-quality button:hover svg,
+.threedot_svg:hover .svg_color,
+.like_song:hover .fav path,
+.shuffle:hover .svg_color,
+.volume-toggle:hover .svg_color {
+    fill: #e72c30;
+    transition: fill 0.3s ease;
+    cursor: pointer;
+}
